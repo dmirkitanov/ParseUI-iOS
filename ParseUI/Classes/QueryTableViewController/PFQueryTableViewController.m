@@ -100,6 +100,8 @@
 #pragma mark UIViewController
 
 - (void)loadView {
+    [super loadView];
+
     if (self.loadingViewEnabled) {
         self.loadingView = [[PFLoadingView alloc] initWithFrame:CGRectZero];
         [self.tableView addSubview:self.loadingView];
